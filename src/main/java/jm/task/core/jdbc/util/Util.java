@@ -7,8 +7,8 @@ import java.sql.SQLException;
 
 public class Util {
     private static final String URL_DB = "jdbc:mysql://localhost:3306/predb";
-    private static final String USER = "test1";
-    private static final String PSW = "test1";
+    private static final String USER = "root";
+    private static final String PSW = "my179sql";
     public static Connection getConnection() {
         Connection connection = null;
         try {

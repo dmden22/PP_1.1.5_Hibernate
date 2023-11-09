@@ -11,19 +11,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
-    public UserDaoJDBCImpl() {
 
-    }
+    private final String createUsersQuery = "CREATE TABLE IF NOT EXISTS userTable(" +//todo: codeStyle
+            "id bigint auto_increment primary key, " +
+            "name varchar(255) null, " +
+            "lastname varchar(255) null, " +
+            "age tinyint null)";
 
     public void createUsersTable() {
         Connection connection = Util.getConnection();
         try {
             Statement statement = connection.createStatement();
-            statement.execute("CREATE TABLE IF NOT EXISTS userTable(" +
-                    "id bigint auto_increment primary key, " +
-                    "name varchar(255) null, " +
-                    "lastname varchar(255) null, " +
-                    "age tinyint null);");
+            statement.execute(createUsersQuery);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
