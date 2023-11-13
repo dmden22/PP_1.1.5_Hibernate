@@ -25,7 +25,7 @@ public class Main {
         userDao.cleanUsersTable();
         userDao.dropUsersTable();*/
 
-        /*UserDao userDao = new UserDaoHibernateImpl();
+        UserDao userDao = new UserDaoHibernateImpl();
         userDao.createUsersTable();
 
         userDao.saveUser("Name1", "LastName1", (byte) 20);
@@ -36,7 +36,7 @@ public class Main {
         userDao.removeUserById(2);
         userDao.cleanUsersTable();
         userDao.getAllUsers().stream().forEach(System.out::println);
-        userDao.dropUsersTable();*/
+        userDao.dropUsersTable();
 
 
 
