@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="TaskJDBC" target="11" />
+      <module name="PP_1.1.5_Hibernate" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
